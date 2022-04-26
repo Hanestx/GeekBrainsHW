@@ -1,11 +1,13 @@
 using UnityEngine;
 
+
 namespace Asteroids
 {
     public class RotationShip :IRotation
     {
         private Transform _transform;
 
+        
         public RotationShip(Transform transform)
         {
             _transform = transform;

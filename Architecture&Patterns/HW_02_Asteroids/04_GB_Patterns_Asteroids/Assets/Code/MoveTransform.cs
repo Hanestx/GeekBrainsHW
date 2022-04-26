@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 namespace Asteroids
 {
     internal class MoveTransform : IMove
@@ -8,6 +9,7 @@ namespace Asteroids
         public float Speed { get; protected set; }
         private Vector3 _move;
 
+        
         public MoveTransform(Transform transform, float speed)
         {
             _transform = transform;

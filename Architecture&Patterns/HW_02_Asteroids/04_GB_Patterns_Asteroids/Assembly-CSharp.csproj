@@ -52,13 +52,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Code\Player.cs" />
-     <Compile Include="Assets\Code\MoveTransform.cs" />
-     <Compile Include="Assets\Code\IMove.cs" />
-     <Compile Include="Assets\Code\AccelerationMove.cs" />
-     <Compile Include="Assets\Code\IRotation.cs" />
-     <Compile Include="Assets\Code\RotationShip.cs" />
      <Compile Include="Assets\Code\Ship.cs" />
+     <Compile Include="Assets\Code\RotationShip.cs" />
+     <Compile Include="Assets\Code\Interfaces\IMove.cs" />
+     <Compile Include="Assets\Code\Player.cs" />
+     <Compile Include="Assets\Code\AccelerationMove.cs" />
+     <Compile Include="Assets\Code\Interfaces\IRotation.cs" />
+     <Compile Include="Assets\Code\MoveTransform.cs" />
+     <Compile Include="Assets\Code\InputManager.cs" />
+     <Compile Include="Assets\Code\Interfaces\IWeapon.cs" />
+     <Compile Include="Assets\Code\GunBall.cs" />
+     <Compile Include="Assets\Code\PoolObjects.cs" />
+     <Compile Include="Assets\Code\Health.cs" />
+     <Compile Include="Assets\Code\Interfaces\IDamage.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/ProgramFiles/UnityEditor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
