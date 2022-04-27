@@ -26,7 +26,7 @@ namespace Asteroids
             var rotation = new RotationShip(transform);
             
             _camera = Camera.main;
-            _health = new Health(_hp, gameObject);
+            _health = new Health(_hp, _hp);
             _gunBall = new GunBall(_bullets, _force, _barrel);
             _ship = new Ship(moveTransform, rotation, _gunBall, _health);
             _inputManager = new InputManager(_ship, _camera, transform);

@@ -5,31 +5,32 @@ namespace Asteroids
 {
     internal sealed class Health : IDamage
     {
-        public float HP { get; private set; }
+        public float Max { get; }
+        public float Current { get; private set; }
         private GameObject _player;
 
         
-        public Health(float hp, GameObject player)
+        public Health(float max, float current)
         {
-            HP  = hp;
-            _player = player;
+            Max = max;
+            Current  = current;
         }
-        
+
         public void GetDamage()
         {
-            HP--;
-            if (HP <= 0)
+            Current--;
+            if (Current <= 0)
             {
                _player.SetActive(false);
             }
             
-            Debug.Log(HP);
+            Debug.Log(Current);
         }
         
-        public void AddHealth()
+        public void ChangeCurrentHealth(float hp)
         {
-            HP++;
-            Debug.Log(HP);
+            Current = hp;
+            Debug.Log(Current);
         }
     }
 }
