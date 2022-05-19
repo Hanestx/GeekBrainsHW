@@ -21,7 +21,6 @@ namespace Asteroids
                 return _health;
             }
             protected set => _health = value;
-
         }
         
         public Transform RootPool
@@ -36,12 +35,17 @@ namespace Asteroids
                 return _rootPool;
             }
         }
-        
-        
 
         public static Asteroid CreateAsteroidEnemy(Health hp)
         {
             var enemy = Instantiate(Resources.Load<Asteroid>("Enemy/Asteroid"));
+            enemy.Health = hp;
+            return enemy;
+        }
+
+        public static UFO CreateUFOEnemy(Health hp)
+        {
+            var enemy = Instantiate(Resources.Load<UFO>("Enemy/UFO"));
             enemy.Health = hp;
             return enemy;
         }

@@ -18,9 +18,10 @@ namespace Asteroids.ObjectPool
             if (!_rootPool)
             {
                 _rootPool = new
-                    GameObject(NameManager.POOL_AMMUNITION).transform;
+                    GameObject(NameManager.POOL_ENEMIES).transform;
             }
         }
+        
         public Enemy GetEnemy(string type)
         {
             Enemy result;
@@ -40,6 +41,7 @@ namespace Asteroids.ObjectPool
             return _enemyPool.ContainsKey(type) ? _enemyPool[type] :
                 _enemyPool[type] = new HashSet<Enemy>();
         }
+        
         private Enemy GetAsteroid(HashSet<Enemy> enemies)
         {
             var enemy = enemies.FirstOrDefault(a => !a.gameObject.activeSelf);
