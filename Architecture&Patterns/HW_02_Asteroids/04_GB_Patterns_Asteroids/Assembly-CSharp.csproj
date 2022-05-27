@@ -71,6 +71,7 @@
      <Compile Include="Assets\Code\Interfaces\IDamage.cs" />
      <Compile Include="Assets\Code\Abstract_Factory\Interfaces\IWindow.cs" />
      <Compile Include="Assets\Code\Abstract_Factory\PlatformFactory.cs" />
+     <Compile Include="Assets\Code\CameraController.cs" />
      <Compile Include="Assets\Code\Abstract_Factory\WindowFactory.cs" />
      <Compile Include="Assets\Code\Asteroid.cs" />
      <Compile Include="Assets\Code\Interfaces\IWeapon.cs" />
@@ -86,9 +87,27 @@
      <Compile Include="Assets\Code\RotationShip.cs" />
      <Compile Include="Assets\Code\Interfaces\IRotation.cs" />
      <Compile Include="Assets\Code\InputManager.cs" />
-     <Compile Include="Assets\Code\Abstract_Factory\PCInput.cs" />
      <Compile Include="Assets\Code\AsteroidSpawner.cs" />
-     <Compile Include="Assets\Code\CameraController.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\PCInput.cs" />
+     <Compile Include="Assets\Code\Builder\GameObjectBuilder.cs" />
+     <Compile Include="Assets\Code\Builder\GameObjectVisualBuilder.cs" />
+     <Compile Include="Assets\Code\Builder\GameObjectPhysicsBuilder.cs" />
+     <Compile Include="Assets\Code\Builder\Example.cs" />
+     <Compile Include="Assets\Code\Builder\BuilderExtensions\BuilderExtensions.cs" />
+     <Compile Include="Assets\Code\Builder\BuilderExtensions\Example.cs" />
+     <Compile Include="Assets\Code\Prototype\PlayerData.cs" />
+     <Compile Include="Assets\Code\Prototype\Hp.cs" />
+     <Compile Include="Assets\Code\Prototype\ExamplePrototype.cs" />
+     <Compile Include="Assets\Code\Prototype\ObjectExtensions.cs" />
+     <Compile Include="Assets\Code\Singleton\Services.cs" />
+     <Compile Include="Assets\Code\Singleton\ExampleSingleton.cs" />
+     <Compile Include="Assets\Code\Singleton\SingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\Code\Singleton\TestSingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\IService.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\Service.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\ServiceLocator.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\ExampleServiceLocator.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\ServiceLocatorMonoBehaviour.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/ProgramFiles/UnityEditor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
