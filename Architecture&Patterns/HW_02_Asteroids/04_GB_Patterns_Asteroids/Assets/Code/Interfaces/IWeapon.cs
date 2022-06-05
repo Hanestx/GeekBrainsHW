@@ -1,5 +1,3 @@
-using UnityEngine;
-
 namespace Asteroids
 {
     public interface IWeapon
@@ -7,5 +5,6 @@ namespace Asteroids
         float Force { get; }
 
         void Shoot();
+        
     }
 }

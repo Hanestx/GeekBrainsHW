@@ -37,6 +37,11 @@ namespace Asteroids
             {
                 _ship.Shoot();
             }
+
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                _ship.UnlockWeapon();
+            }
         }
     }
 }

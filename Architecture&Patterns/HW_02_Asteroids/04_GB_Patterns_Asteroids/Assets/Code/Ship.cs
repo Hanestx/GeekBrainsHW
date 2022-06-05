@@ -20,6 +20,14 @@ namespace Asteroids
             _damageImplementation = damageImplementation;
         }
         
+        public void UnlockWeapon()
+        {
+            if (_weaponImplementation is WeaponProxy _weapon)
+            {
+                _weapon.UnlockWeapon();
+            }
+        }
+        
         public void Move(float horizontal, float vertical, float deltaTime)
         {
             _moveImplementation.Move(horizontal, vertical, deltaTime);
@@ -55,6 +63,8 @@ namespace Asteroids
         {
             _damageImplementation.GetDamage();
         }
+
+        
 
     }
 }

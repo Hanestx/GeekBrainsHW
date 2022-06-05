@@ -5,22 +5,31 @@ namespace Asteroids.Decorator
     internal sealed class Weapon : IFire
     {
         private Transform _barrelPosition;
+        private Transform _barrelPositionDefault;
         private IAmmunition _bullet;
         private float _force;
         private AudioClip _audioClip;
+        private AudioClip _audioClipDefault;
         private readonly AudioSource _audioSource;
         public Weapon(IAmmunition bullet, Transform barrelPosition, float force, AudioSource audioSource, AudioClip audioClip)
         {
             _bullet = bullet;
             _barrelPosition = barrelPosition;
+            _barrelPositionDefault = barrelPosition;
             _force = force;
             _audioSource = audioSource;
             _audioClip = audioClip;
+            _audioClipDefault = audioClip;
         }
         
         public void SetBarrelPosition(Transform barrelPosition)
         {
             _barrelPosition = barrelPosition;
+        }
+        
+        public void SetDefaultBarrelPosition()
+        {
+            _barrelPosition = _barrelPositionDefault;
         }
         
         public void SetBullet(IAmmunition bullet)
@@ -36,6 +45,11 @@ namespace Asteroids.Decorator
         public void SetAudioClip(AudioClip audioClip)
         {
             _audioClip = audioClip;
+        }
+
+        public void SetDefaultAudio()
+        {
+            _audioClip = _audioClipDefault;
         }
         
         public void Fire()

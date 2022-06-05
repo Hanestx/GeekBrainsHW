@@ -9,7 +9,7 @@ namespace Asteroids
             if(coll.CompareTag("Asteroid"))
             {
                 coll.transform.GetComponent<Asteroid>().DestroyAsteroid();
-                Destroy (gameObject);
+                gameObject.SetActive(false);
             }
         }
         void OnBecameInvisible() 

@@ -18,6 +18,8 @@ namespace Asteroids
         private Ship _ship;
         private Health _health;
         private IWeapon _gunBall;
+        private UnlockWeapon _unlockWeapon;
+        private WeaponProxy _weaponProxy;
         private InputManager _inputManager;
 
 
@@ -31,7 +33,9 @@ namespace Asteroids
             _camera = Camera.main;
             _health = new Health(_hp, _hp);
             _gunBall = new GunBall(_force, _barrel, _bulletsPool);
-            _ship = new Ship(moveTransform, rotation, _gunBall, _health);
+            _unlockWeapon = new UnlockWeapon(false);
+            _weaponProxy = new WeaponProxy(_gunBall, _unlockWeapon);
+            _ship = new Ship(moveTransform, rotation, _weaponProxy, _health);
             _inputManager = new InputManager(_ship, _camera, transform);
             _cameraController = new CameraController(_camera, transform);
         }
