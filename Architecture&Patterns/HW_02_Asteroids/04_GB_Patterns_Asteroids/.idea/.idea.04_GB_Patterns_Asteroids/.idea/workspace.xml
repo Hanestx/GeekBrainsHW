@@ -64,6 +64,22 @@
       <updated>1650862604551</updated>
       <workItem from="1650862610637" duration="4356000" />
       <workItem from="1650876427221" duration="17860000" />
+      <workItem from="1650974348169" duration="1093000" />
+      <workItem from="1650975665007" duration="4173000" />
+      <workItem from="1651064293798" duration="13167000" />
+      <workItem from="1651118091392" duration="1650000" />
+      <workItem from="1651164190889" duration="620000" />
+      <workItem from="1652267830323" duration="17000" />
+      <workItem from="1652790723014" duration="2436000" />
+      <workItem from="1652886895041" duration="2252000" />
+      <workItem from="1652965065179" duration="2139000" />
+      <workItem from="1653646254095" duration="4706000" />
+      <workItem from="1654246693228" duration="5960000" />
+      <workItem from="1654321378613" duration="1103000" />
+      <workItem from="1654322696437" duration="6876000" />
+      <workItem from="1654331703616" duration="25442000" />
+      <workItem from="1654597468523" duration="7549000" />
+      <workItem from="1655090908546" duration="1377000" />
     </task>
     <servers />
   </component>
@@ -75,5 +91,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Command/First/MoveLeft.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Users\Dmitriy\Desktop\My Education\Gamedev\GeekBrains\GeekBrainsHW\Architecture&amp;Patterns\HW_02_Asteroids\04_GB_Patterns_Asteroids\Assets\Code\Command\First\MoveLeft.cs" initialLine="15" containingFunctionPresentation="method 'Execute'">
+            <startOffsets>
+              <option value="506" />
+            </startOffsets>
+            <endOffsets>
+              <option value="507" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

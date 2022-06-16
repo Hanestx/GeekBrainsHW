@@ -52,19 +52,146 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Code\Ship.cs" />
-     <Compile Include="Assets\Code\RotationShip.cs" />
-     <Compile Include="Assets\Code\Interfaces\IMove.cs" />
-     <Compile Include="Assets\Code\Player.cs" />
-     <Compile Include="Assets\Code\AccelerationMove.cs" />
-     <Compile Include="Assets\Code\Interfaces\IRotation.cs" />
-     <Compile Include="Assets\Code\MoveTransform.cs" />
-     <Compile Include="Assets\Code\InputManager.cs" />
-     <Compile Include="Assets\Code\Interfaces\IWeapon.cs" />
-     <Compile Include="Assets\Code\GunBall.cs" />
-     <Compile Include="Assets\Code\PoolObjects.cs" />
-     <Compile Include="Assets\Code\Health.cs" />
-     <Compile Include="Assets\Code\Interfaces\IDamage.cs" />
+     <Compile Include="Assets\Code\Command\First\ICommand.cs" />
+     <Compile Include="Assets\Code\Bridge\Example.cs" />
+     <Compile Include="Assets\Code\Builder\Example.cs" />
+     <Compile Include="Assets\Code\FlyWeight\LevelCompleted.cs" />
+     <Compile Include="Assets\Code\Json\Unit.cs" />
+     <Compile Include="Assets\Code\Prototype\PlayerData.cs" />
+     <Compile Include="Assets\Code\Decorator\ModificationAim.cs" />
+     <Compile Include="Assets\Code\Command\First\MoveRight.cs" />
+     <Compile Include="Assets\Code\Asteroids\GameStarter.cs" />
+     <Compile Include="Assets\Code\Prototype\ObjectExtensions.cs" />
+     <Compile Include="Assets\Code\Facade\Player.cs" />
+     <Compile Include="Assets\Code\Decorator\Muffler.cs" />
+     <Compile Include="Assets\Code\Composite\Unit.cs" />
+     <Compile Include="Assets\Code\Json\Infantry.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\First\MoveToPosition.cs" />
+     <Compile Include="Assets\Code\Json\MagFactory.cs" />
+     <Compile Include="Assets\Code\ObjectPool\NameManager.cs" />
+     <Compile Include="Assets\Code\Json\Health.cs" />
+     <Compile Include="Assets\Code\Bridge\IAttack.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\Main.cs" />
+     <Compile Include="Assets\Code\Asteroids\Ship.cs" />
+     <Compile Include="Assets\Code\Command\First\MoveForward.cs" />
+     <Compile Include="Assets\Code\Builder\GameObjectVisualBuilder.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\ConsoleInput.cs" />
+     <Compile Include="Assets\Code\Adapter\Example.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\Interfaces\IPlatform.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\Second\EnemyModifier.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\Second\AddDefenseModifier.cs" />
+     <Compile Include="Assets\Code\Asteroids\UFOFactory.cs" />
+     <Compile Include="Assets\Code\Decorator\ModificationWeapon.cs" />
+     <Compile Include="Assets\Code\Singleton\Services.cs" />
+     <Compile Include="Assets\Code\Decorator\Bullet.cs" />
+     <Compile Include="Assets\Code\Builder\GameObjectPhysicsBuilder.cs" />
+     <Compile Include="Assets\Code\Command\Second\StateUI.cs" />
+     <Compile Include="Assets\Code\ObjectPool\EnemyPool.cs" />
+     <Compile Include="Assets\Code\Singleton\SingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\Code\Command\First\MoveReverse.cs" />
+     <Compile Include="Assets\Code\Adapter\Enemy.cs" />
+     <Compile Include="Assets\Code\Decorator\ModificationMuffler.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\ExampleServiceLocator.cs" />
+     <Compile Include="Assets\Code\Decorator\IMuffler.cs" />
+     <Compile Include="Assets\Code\Decorator\IAmmunition.cs" />
+     <Compile Include="Assets\Code\Asteroids\UnlockWeapon.cs" />
+     <Compile Include="Assets\Code\Adapter\IAttack.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\Service.cs" />
+     <Compile Include="Assets\Code\Asteroids\Interfaces\IMove.cs" />
+     <Compile Include="Assets\Code\Asteroids\Player.cs" />
+     <Compile Include="Assets\Code\Bridge\Enemy.cs" />
+     <Compile Include="Assets\Code\Asteroids\AccelerationMove.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\Interfaces\IInput.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\IService.cs" />
+     <Compile Include="Assets\Code\Command\First\UndoCommand.cs" />
+     <Compile Include="Assets\Code\Json\UnitJson.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\ServiceLocatorMonoBehaviour.cs" />
+     <Compile Include="Assets\Code\Command\First\DoNothing.cs" />
+     <Compile Include="Assets\Code\Asteroids\UFO.cs" />
+     <Compile Include="Assets\Code\Bridge\Infantry.cs" />
+     <Compile Include="Assets\Code\Composite\Detachment.cs" />
+     <Compile Include="Assets\Code\Prototype\ExamplePrototype.cs" />
+     <Compile Include="Assets\Code\Proxy\Weapon.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\ConsoleWindow.cs" />
+     <Compile Include="Assets\Code\Asteroids\MoveTransform.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\Second\AddAttackModifier.cs" />
+     <Compile Include="Assets\Code\Bridge\MagicalAttack.cs" />
+     <Compile Include="Assets\Code\Asteroids\AsteroidFactory.cs" />
+     <Compile Include="Assets\Code\Proxy\Example.cs" />
+     <Compile Include="Assets\Code\Asteroids\Interfaces\IDamage.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\Interfaces\IWindow.cs" />
+     <Compile Include="Assets\Code\Singleton\ExampleSingleton.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\First\GameHandler.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\First\IGameHandler.cs" />
+     <Compile Include="Assets\Code\Decorator\Example.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\PlatformFactory.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\Second\Example.cs" />
+     <Compile Include="Assets\Code\Builder\BuilderExtensions\Example.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\First\ChainOfResponsibilityTest.cs" />
+     <Compile Include="Assets\Code\Asteroids\CameraController.cs" />
+     <Compile Include="Assets\Code\Command\Second\UserInterface.cs" />
+     <Compile Include="Assets\Code\Facade\GameService.cs" />
+     <Compile Include="Assets\Code\Prototype\Hp.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\WindowFactory.cs" />
+     <Compile Include="Assets\Code\Asteroids\Asteroid.cs" />
+     <Compile Include="Assets\Code\Asteroids\Interfaces\IWeapon.cs" />
+     <Compile Include="Assets\Code\Proxy\UnlockWeapon.cs" />
+     <Compile Include="Assets\Code\Command\First\InputHandler.cs" />
+     <Compile Include="Assets\Code\Json\Mag.cs" />
+     <Compile Include="Assets\Code\Composite\Example.cs" />
+     <Compile Include="Assets\Code\Decorator\Weapon.cs" />
+     <Compile Include="Assets\Code\Asteroids\Interfaces\IEnemyFactory.cs" />
+     <Compile Include="Assets\Code\Facade\Map.cs" />
+     <Compile Include="Assets\Code\Facade\Example.cs" />
+     <Compile Include="Assets\Code\Asteroids\Enemy.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\InputFactory.cs" />
+     <Compile Include="Assets\Code\Asteroids\Bullet.cs" />
+     <Compile Include="Assets\Code\Asteroids\GunBall.cs" />
+     <Compile Include="Assets\Code\Asteroids\Health.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\Platform.cs" />
+     <Compile Include="Assets\Code\Asteroids\PoolMono.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\PCWindow.cs" />
+     <Compile Include="Assets\Code\Asteroids\RotationShip.cs" />
+     <Compile Include="Assets\Code\Command\First\MoveLeft.cs" />
+     <Compile Include="Assets\Code\Adapter\IFire.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\First\RotateAFewSeconds.cs" />
+     <Compile Include="Assets\Code\Adapter\AttackBullet.cs" />
+     <Compile Include="Assets\Code\Command\Second\PanelOne.cs" />
+     <Compile Include="Assets\Code\Bridge\IMove.cs" />
+     <Compile Include="Assets\Code\Json\IEnemyFactory.cs" />
+     <Compile Include="Assets\Code\Decorator\Aim.cs" />
+     <Compile Include="Assets\Code\ServiceLocator\ServiceLocator.cs" />
+     <Compile Include="Assets\Code\Json\Example.cs" />
+     <Compile Include="Assets\Code\Builder\GameObjectBuilder.cs" />
+     <Compile Include="Assets\Code\Proxy\WeaponProxy.cs" />
+     <Compile Include="Assets\Code\Json\InfantryFactory.cs" />
+     <Compile Include="Assets\Code\Builder\BuilderExtensions\BuilderExtensions.cs" />
+     <Compile Include="Assets\Code\Decorator\IAim.cs" />
+     <Compile Include="Assets\Code\Asteroids\Interfaces\IRotation.cs" />
+     <Compile Include="Assets\Code\Command\Second\BaseUi.cs" />
+     <Compile Include="Assets\Code\Singleton\TestSingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\Code\Facade\Game.cs" />
+     <Compile Include="Assets\Code\Proxy\IWeapon.cs" />
+     <Compile Include="Assets\Code\Asteroids\WeaponProxy.cs" />
+     <Compile Include="Assets\Code\ChainOfResponsibility\Second\Enemy.cs" />
+     <Compile Include="Assets\Code\Decorator\IFire.cs" />
+     <Compile Include="Assets\Code\Json\UnitJsonList.cs" />
+     <Compile Include="Assets\Code\Asteroids\InputManager.cs" />
+     <Compile Include="Assets\Code\Composite\IAttack.cs" />
+     <Compile Include="Assets\Code\Asteroids\AsteroidSpawner.cs" />
+     <Compile Include="Assets\Code\Abstract_Factory\PCInput.cs" />
+     <Compile Include="Assets\Code\Json\CompositeJson.cs" />
+     <Compile Include="Assets\Code\Command\Second\PanelTwo.cs" />
+     <Compile Include="Assets\Code\Interpreter\Example.cs" />
+     <Compile Include="Assets\Code\Iterator\Target.cs" />
+     <Compile Include="Assets\Code\Iterator\DamageType.cs" />
+     <Compile Include="Assets\Code\Iterator\IAbility.cs" />
+     <Compile Include="Assets\Code\Iterator\Ability.cs" />
+     <Compile Include="Assets\Code\Iterator\IEnemy.cs" />
+     <Compile Include="Assets\Code\Iterator\Enemy.cs" />
+     <Compile Include="Assets\Code\Iterator\Example.cs" />
+     <Compile Include="Assets\Code\Memento\PointInTime.cs" />
+     <Compile Include="Assets\Code\Memento\TimeBody.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/ProgramFiles/UnityEditor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -289,6 +416,15 @@
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.StandardEvents">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Editor">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.Tracker">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/ProgramFiles/UnityEditor/2020.3.25f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -635,8 +771,8 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>D:/ProgramFiles/UnityEditor/2020.3.25f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ <Reference Include="Purchasing.Common">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
@@ -647,8 +783,11 @@
  <Reference Include="Unity.2D.PixelPerfect">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <Reference Include="Unity.2D.Animation.Editor">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="PsdPlugin">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
@@ -665,11 +804,17 @@
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.Purchasing.SecurityStub">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.2D.IK.Editor">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <Reference Include="Unity.2D.Tilemap.Editor">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Psdimporter.Editor">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
@@ -680,6 +825,9 @@
  <Reference Include="Unity.InternalAPIEditorBridge.001">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
@@ -689,14 +837,32 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Analytics">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.DataPrivacy">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.IK.Runtime">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing.SecurityCore">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing.Codeless">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
@@ -710,8 +876,17 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.Purchasing.Stores">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Mathematics.Editor">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Monetization">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
@@ -719,11 +894,20 @@
  <Reference Include="Unity.2D.SpriteShape.Editor">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Common.Editor">
- <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements.Editor">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
  <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Common.Editor">
+ <HintPath>C:/Users/Dmitriy/Desktop/My Education/Gamedev/GeekBrains/GeekBrainsHW/Architecture&amp;Patterns/HW_02_Asteroids/04_GB_Patterns_Asteroids/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

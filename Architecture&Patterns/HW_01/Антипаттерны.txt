@@ -1,8 +1,0 @@
-В предыдущих проектах были такие Анти-паттерны как:
--Boat anchor 
--Copy and Paste Programming
--Fear of adding classes 
--God object 
--Reinventing the square wheel 
--Reinventing the wheel
--Too many managers
